@@ -1,2 +1,70 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.header-logo {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.header-logo img {
+	height: 155px;
+}
+.header-logo hr {
+	border-color: blue;
+}
+
+.navBar {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+}
+
+.navBar a {
+	color: #ebebeb;
+	padding: 10px 17px
+}
+
+.social-media {
+	position: absolute;
+	top: 13px;
+    left: 30px;
+    z-index: 2;
+}
+.social-media i {
+	margin: 0 5px;
+	color: #ebebeb !important;
+	float: left;
+	padding: 0 4px;
+}
+
+.navBar nav-links {
+	
+}
+
+.main-container {
+	width: 94%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+

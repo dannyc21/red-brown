@@ -8,12 +8,12 @@
 
 <%= form_for @article do |f| %>
 	<p>
-		<%= f.label :title %>
+		<div class="titleInput"><%= f.label :title %></div>
 		<%= f.text_field :title %>
 	</p>
 
 	<p>
-		<%= f.label :description %>
+		<div class="descriptionInput"><%= f.label :description %></div>
 		<%= f.text_area :description %>
 	</p>
 

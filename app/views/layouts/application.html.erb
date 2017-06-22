@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
     <title>YoReadThis</title>
     <%= csrf_meta_tags %>
 
@@ -9,7 +12,12 @@
   </head>
 
   <body>
-  	<%= render 'layouts/messages' %>
-    <%= yield %>
+    <%= render 'layouts/navbar' %>
+
+  	<div class="main-container">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+
   </body>
 </html>
