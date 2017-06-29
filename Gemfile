@@ -16,6 +16,11 @@ gem 'puma', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-sass'
 gem 'sass-rails', '~> 5.0'
+
+# Use pagination
+gem 'will_paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
