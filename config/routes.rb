@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :users, except: [:new]
+  resources :categories, except: [:destroy]
 
 end
