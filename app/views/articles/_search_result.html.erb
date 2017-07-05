@@ -1,0 +1,5 @@
+<% if @searches.blank? %>
+	<h4>There are no articles containing  <%= params[:search] %>.</h4>
+<% else %>
+	<%= render 'article', obj: @searches %>
+<% end %>

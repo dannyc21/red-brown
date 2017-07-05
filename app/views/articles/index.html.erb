@@ -1,11 +1,31 @@
 <h1 align="center">Listing all articles</h1>
 
-<div align="center">
-	<%= will_paginate %>
-</div>
+<% if @searches.blank? %>
+	<h4>There are no articles containing  <%= params[:search] %>.</h4>
+	
+	<div align="center">
+		<%= will_paginate %>
+	</div>
 
-<%= render 'article', obj: @articles %>
+	<%= render 'article', obj: @articles %>
+	
+	<div align="center">
+		<%= will_paginate %>
+	</div>
+	
+<% else %>
 
-<div align="center">
-	<%= will_paginate %>
-</div>
+	<% if @searches.count > 5 %>
+		<div align="center">
+			<%= will_paginate %>
+		</div>
+	<% end %>
+
+		<%= render 'article', obj: @searches %>
+
+		<% if @searches.count > 5 %>
+		<div align="center">
+			<%= will_paginate %>
+		</div>
+	<% end %>
+<% end %>

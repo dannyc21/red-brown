@@ -100,14 +100,32 @@ padding-bottom: 15px;
 	width: auto !important;
 }
 
-
-
-
-
-
-
-
-
+/* Categories List */
+.categories_list {
+	width: 16%;
+	position: fixed;
+    /* height: 90px; */
+    left: 10px;
+    top: 30%;
+    background-color: #584545;
+}
+.categories_list ul {
+	list-style-type: none;
+	padding: 0 !important;
+}
+.categories_list ul li:first-child {
+	font-size: 34px;
+	border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+.categories_list ul li {
+	padding: 10px;
+	font-size: 24px;
+}
+.categories_list ul li:nth-child(even) {
+	background-color: #EEEEEE;
+}
 
 
 
